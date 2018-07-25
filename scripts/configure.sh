@@ -4,7 +4,7 @@ cd /miktex/build
 cmake \
     -DMIKTEX_PACKAGE_REVISION=${package_revision} \
     -DMIKTEX_LINUX_DIST=opensuse \
-    -DMIKTEX_LINUX_DIST_VERSION=undefined \
+    -DMIKTEX_LINUX_DIST_VERSION=15 \
     -DUSE_SYSTEM_HARFBUZZ=FALSE \
     -DUSE_SYSTEM_HARFBUZZ_ICU=FALSE \
     -DUSE_SYSTEM_LOG4CXX=FALSE \

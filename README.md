@@ -4,11 +4,11 @@
 
 Get the latest image from the registry:
 
-    docker pull miktex/miktex-build-opensuse:latest
+    docker pull miktex/miktex-build-opensuse:15
 
 or build it yourself:
 
-    docker build --tag miktex/miktex-build-opensuse:latest .
+    docker build --tag miktex/miktex-build-opensuse:15 .
 
 ## Using the image
 
@@ -26,15 +26,15 @@ variables `USER_ID` and `GROUP_ID`.
 Build the MiKTeX RPM:
 
     mkdir -p ~/work/miktex/source
-    mkdir -p ~/work/miktex/builds/opensuse-latest
+    mkdir -p ~/work/miktex/builds/opensuse-15
     curl -fsSL https://miktex.org/download/ctan/systems/win32/miktex/source/miktex-2.9.tar.xz | \
       tar -xJ --strip-components=1 -C ~/work/miktex/source
     docker run -t \
       -v ~/work/miktex/source:/miktex/source:ro \
-      -v ~/work/miktex/builds/opensuse-latest:/miktex/build:rw \
+      -v ~/work/miktex/builds/opensuse-15:/miktex/build:rw \
       -e USER_ID=`id -u` \
       -e GROUP_ID=`id -g` \
-      miktex/miktex-build-opensuse:latest
+      miktex/miktex-build-opensuse:15
 
 The build artifact `miktex-*.rpm` will be written to
-`~/work/miktex/builds/opensuse-latest`.
+`~/work/miktex/builds/opensuse-15`.
