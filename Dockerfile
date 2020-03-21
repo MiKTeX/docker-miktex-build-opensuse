@@ -15,6 +15,7 @@ RUN    zypper install -y \
            gcc \
            gcc-c++ \
            gd-devel \
+	   git \
            gmp-devel \
            gpg2 \
            graphite2-devel \
