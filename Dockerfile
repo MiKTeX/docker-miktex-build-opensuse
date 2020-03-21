@@ -1,6 +1,6 @@
 FROM opensuse/leap:15
 
-LABEL Description="MiKTeX build environment, openSUSE Leap 15" Vendor="Christian Schenk" Version="2.9.7070"
+LABEL Description="MiKTeX build environment, openSUSE Leap 15" Vendor="Christian Schenk" Version="2.9.7385"
 
 RUN    zypper update -y
 
@@ -20,6 +20,7 @@ RUN    zypper install -y \
            graphite2-devel \
            hunspell-devel \
            libQt5Core-devel \
+	   libQt5DBus-devel \
            libQt5Gui-devel \
            libQt5PrintSupport-devel \
            libapr-util1-devel \
