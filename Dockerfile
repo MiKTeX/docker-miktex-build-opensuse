@@ -15,13 +15,13 @@ RUN    zypper install -y \
            gcc \
            gcc-c++ \
            gd-devel \
-	   git \
+           git \
            gmp-devel \
            gpg2 \
            graphite2-devel \
            hunspell-devel \
            libQt5Core-devel \
-	   libQt5DBus-devel \
+           libQt5DBus-devel \
            libQt5Gui-devel \
            libQt5PrintSupport-devel \
            libapr-util1-devel \
