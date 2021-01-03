@@ -1,12 +1,12 @@
 FROM opensuse/leap:15
 
-LABEL Description="MiKTeX build environment, openSUSE Leap 15" Vendor="Christian Schenk" Version="2.9.7385"
+LABEL Description="MiKTeX build environment, openSUSE Leap 15" Vendor="Christian Schenk" Version="21.1"
 
 RUN    zypper update -y
 
 RUN    zypper install -y \
-           libQt5Concurrent-devel \
-           libqt5-qttools-devel \
+           apr-devel \
+           apr-util-devel \
            bison \
            cairo-devel \
            curl \
@@ -20,25 +20,26 @@ RUN    zypper install -y \
            gpg2 \
            graphite2-devel \
            hunspell-devel \
+           libQt5Concurrent-devel \
            libQt5Core-devel \
            libQt5DBus-devel \
            libQt5Gui-devel \
            libQt5PrintSupport-devel \
-           libapr-util1-devel \
-           libapr1-devel \
+           libboost_locale-devel \
            libbz2-devel \
            libcurl-devel \
            libicu-devel \
            libmspack-devel \
            libopenssl-devel \
            libqt5-qtscript-devel \
-           liburiparser-devel \
+           libqt5-qttools-devel \
            libxslt-devel \
            make \
            mpfr-devel \
            popt-devel \
            potrace-devel \
            rpm-build \
+           uriparser-devel \
            xz-devel \
            zziplib-devel
 
