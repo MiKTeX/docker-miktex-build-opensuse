@@ -1,6 +1,6 @@
 FROM opensuse/leap:15
 
-LABEL Description="MiKTeX build environment, openSUSE Leap 15" Vendor="Christian Schenk" Version="21.1"
+LABEL Description="MiKTeX build environment, openSUSE Leap 15" Vendor="Christian Schenk" Version="21.3"
 
 RUN    zypper update -y
 
@@ -31,6 +31,7 @@ RUN    zypper install -y \
            libicu-devel \
            libmspack-devel \
            libopenssl-devel \
+           libqt5-qtdeclarative-devel \
            libqt5-qtscript-devel \
            libqt5-qttools-devel \
            libxslt-devel \
