@@ -1,7 +1,7 @@
 #!/bin/sh
 package_revision=${1-1}
 cd /miktex/build
-cmake \
+CC=/usr/bin/gcc-13 CXX=/usr/bin/g++-13 cmake \
     -DMIKTEX_PACKAGE_REVISION=${package_revision} \
     -DMIKTEX_LINUX_DIST=opensuse \
     -DMIKTEX_LINUX_DIST_VERSION=15 \
