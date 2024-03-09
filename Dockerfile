@@ -1,6 +1,6 @@
 FROM opensuse/leap:15
 
-LABEL Description="MiKTeX build environment, openSUSE Leap 15" Vendor="Christian Schenk" Version="23.12.30"
+LABEL Description="MiKTeX build environment, openSUSE Leap 15" Vendor="Christian Schenk" Version="24.3.9"
 
 RUN    zypper update -y
 
@@ -26,6 +26,7 @@ RUN    zypper install -y \
            libopenssl-devel \
            libxslt-devel \
            make \
+           mpfi-devel \
            mpfr-devel \
            popt-devel \
            potrace-devel \
