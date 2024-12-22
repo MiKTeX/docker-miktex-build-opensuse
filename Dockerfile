@@ -1,6 +1,6 @@
 FROM opensuse/leap:15
 
-LABEL Description="MiKTeX build environment, openSUSE Leap 15" Vendor="Christian Schenk" Version="24.3.9"
+LABEL Description="MiKTeX build environment, openSUSE Leap 15" Vendor="Christian Schenk" Version="24.12.22"
 
 RUN    zypper update -y
 
